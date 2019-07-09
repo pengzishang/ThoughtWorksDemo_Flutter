@@ -4,7 +4,9 @@
 // opens a [SnackBar], while the second action navigates to a new page.
 
 import 'package:flutter/material.dart';
-import 'discover.dart';
+import 'VC/discover.dart';
+
+
 void main() => runApp(MyApp());
 
 /// This Widget is the main application widget.
@@ -16,6 +18,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: _title,
       home: MainPage(),
+      // debugShowMaterialGrid:true,
+      // showPerformanceOverlay: true,
+      // showSemanticsDebugger:true
+      // routes: {
+      //   "/home": (context) => MainPage(),
+      //   "/home/moment": (context) => MomentPage(),
+      //   "/home/moment/imagePageView": (context) => ImagePageView(),
+      // },
     );
   }
 }

@@ -119,6 +119,7 @@ class TweetComment {
 
   TweetComment.fromJson(jsonRes) {
     content = jsonRes['content'];
+    // content += 'ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd';
     sender = jsonRes['sender'] == null
         ? null
         : new CommentSender.fromJson(jsonRes['sender']);
